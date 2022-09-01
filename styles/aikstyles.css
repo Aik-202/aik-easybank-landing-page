@@ -62,6 +62,7 @@ main {
     flex-direction: column-reverse;
     background-image: url("../images/bg-intro-mobile.svg");
     background-repeat: no-repeat;
+    margin-bottom: 20%;
 }
 
 main>figure>img {
@@ -137,11 +138,24 @@ section>div:first-child>p {
     align-items: center;
 }
 
-/* .cont1>h4 */
+.cont1>h4{
+    font-size: 20px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
 
 .cont1>p {
     max-width: 85%;
     line-height: 1.5rem;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(0, 0%, 98%);
+    padding-top: 15%;
 }
 
 article>div>figure>img {
