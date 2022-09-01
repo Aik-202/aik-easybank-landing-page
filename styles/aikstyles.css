@@ -155,12 +155,50 @@ article {
     justify-content: center;
     align-items: center;
     background-color: hsl(0, 0%, 98%);
+    padding: 15px;
     padding-top: 15%;
 }
 
-article>div>figure>img {
+article>div {
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(0, 0%, 100%);
+    border: 1px solid hsl(0, 0%, 100%);
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+article>div>figure {
     max-width: 100%;
     width: 100%;
+    margin: 0;
+}
+
+article>div>figure>img {
+    max-width: inherit;
+    width: inherit;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    margin-bottom: 25px;
+}
+
+article>div>figure>figcaption {
+    margin-left: 10%;
+}
+
+article>div>h4{
+    margin-bottom: 0;
+    margin-left: 10%;
+    margin-right: 20px;
+}
+
+article>div>p {
+    line-height: 1.5rem;
+    margin-left: 10%; 
+    margin-right: 20px;
 }
 
 .attribution {
