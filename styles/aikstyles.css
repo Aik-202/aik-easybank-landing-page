@@ -219,7 +219,7 @@ article>div>p {
     font-size: 15px;
 }
 
-footer{
+footer {
     display: flex;
     flex-direction: column;
     background-color: hsl(233, 26%, 24%);
@@ -257,8 +257,8 @@ footer>ul>li {
 }
 
 footer>div>button {
-    margin-top: 20px;
-    margin-bottom: 15px;
+    margin-top: 25px;
+    margin-bottom: 20px;
 }
 
 .attribution {
@@ -276,7 +276,166 @@ footer>div>button {
     padding-left: 2px;
 }
 
-@media only screen and (min-width: 1280px) {
+@media only screen and (min-width: 280px) {
+    main>div>h1 {
+        font-size: 25px;
+    }
+
+    main>div>p {
+        font-size: 15px;
+        max-width: 85%;
+        line-height: 2.2rem;
+    }
+
+    section>div:first-child>h2 {
+        font-size: 25px;
+    }
+
+    section>div:first-child>p {
+        font-size: 15px;
+        max-width: 85%;
+        line-height: 2.2rem;
+    }
+
+    .cont1>h4 {
+        font-size: 25px;
+    }
+
+    .cont1>p {
+        font-size: 15px;
+        max-width: 85%;
+        line-height: 2.2rem;
+    }
+
+    article>h2 {
+        font-size: 25px;
+    }
+
+    article>div>figure>figcaption {
+        font-size: 14px;
+    }
+
+    article>div>h4 {
+        font-size: 17px;
+        margin-left: 10.5%;
+    }
+
+    article>div>p {
+        font-size: 14px;
+    }
+
+    footer {
+        font-size: 14px;
+    }
+
+    footer>ul>li {
+        font-size: 14px;
+        margin-bottom: 12px;
+    }
+
+    .attribution {
+        font-size: 8px;
+    }
+}
+
+@media only screen and (min-width: 540px) {
+    main {
+        background-size: 100% 80%;
+    }
+
+    article>div {
+        max-width: 80%;
+        margin-bottom: 30px;
+    }
+
+    article>div>h4 {
+        margin-left: 35px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    button {
+        font-size: 25px;
+        padding: 20px;
+        padding-left: 30px;
+        padding-right: 30px;
+        border-radius: 30px;
+        margin-top: 20px;
+    }
+
+    main>div>h1 {
+        font-size: 45px;
+    }
+
+    main>div>p {
+        font-size: 25px;
+        max-width: 85%;
+        line-height: 2.2rem;
+    }
+
+    section>div:first-child>h2 {
+        font-size: 45px;
+    }
+
+    section>div:first-child>p {
+        font-size: 25px;
+        max-width: 85%;
+        line-height: 2.2rem;
+    }
+
+    .cont1>h4 {
+        font-size: 35px;
+    }
+
+    .cont1>p {
+        font-size: 25px;
+        max-width: 85%;
+        line-height: 2.2rem;
+    }
+
+    article>h2 {
+        font-size: 45px;
+    }
+
+    article>div>figure>figcaption {
+        font-size: 24px;
+    }
+
+    article>div>h4 {
+        font-size: 27px;
+        line-height: 2.2rem;
+        margin-left: 10.5%;
+    }
+
+    article>div>p {
+        font-size: 24px;
+        line-height: 2.2rem;
+    }
+
+    footer {
+        font-size: 24px;
+    }
+
+    footer>ul>li {
+        font-size: 24px;
+        margin-bottom: 12px;
+    }
+
+    footer>div>button {
+        font-size: 24px;
+        padding: 20px;
+        padding-left: 25px;
+        padding-right: 25px;
+        border-radius: 30px;
+    }
+
+    .attribution {
+        font-size: 18px;
+    }
+}
+
+
+@media only screen and (min-width: 1024px) {
     nav {
         display: flex;
         flex-direction: row;
