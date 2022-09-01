@@ -162,7 +162,7 @@ article {
     padding-bottom: 18%;
 }
 
-article>div {
+article>div>div {
     align-self: center;
     display: flex;
     flex-direction: column;
@@ -181,13 +181,13 @@ article>h2 {
     font-weight: 500;
 }
 
-article>div>figure {
+article>div>div>figure {
     max-width: 100%;
     width: 100%;
     margin: 0;
 }
 
-article>div>figure>img {
+article>div>div>figure>img {
     max-width: inherit;
     width: inherit;
     border-top-left-radius: 5px;
@@ -195,13 +195,13 @@ article>div>figure>img {
     margin-bottom: 25px;
 }
 
-article>div>figure>figcaption {
+article>div>div>figure>figcaption {
     margin-left: 10%;
     color: hsl(233, 8%, 62%);
     font-size: 14px;
 }
 
-article>div>h4 {
+article>div>div>h4 {
     margin-bottom: 0;
     margin-left: 10%;
     margin-right: 20px;
@@ -211,7 +211,7 @@ article>div>h4 {
     color: hsl(233, 26%, 24%);
 }
 
-article>div>p {
+article>div>div>p {
     line-height: 1.5rem;
     margin-left: 10%;
     margin-right: 20px;
@@ -264,16 +264,14 @@ footer>div>button {
 .attribution {
     display: flex;
     flex-direction: row;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    justify-content: center;
+    align-items: center;
     font-size: 11px;
     text-align: center;
-    color: hsl(0, 0%, 100%);
 }
 
 .attribution a {
     color: hsl(228, 45%, 44%);
-    padding-left: 2px;
 }
 
 @media only screen and (min-width: 280px) {
@@ -311,16 +309,16 @@ footer>div>button {
         font-size: 25px;
     }
 
-    article>div>figure>figcaption {
+    article>div>div>figure>figcaption {
         font-size: 14px;
     }
 
-    article>div>h4 {
+    article>div>div>h4 {
         font-size: 17px;
         margin-left: 10.5%;
     }
 
-    article>div>p {
+    article>div>div>p {
         font-size: 14px;
     }
 
@@ -343,12 +341,12 @@ footer>div>button {
         background-size: 100% 80%;
     }
 
-    article>div {
+    article>div>div {
         max-width: 80%;
         margin-bottom: 30px;
     }
 
-    article>div>h4 {
+    article>div>div>h4 {
         margin-left: 35px;
     }
 }
@@ -397,17 +395,17 @@ footer>div>button {
         font-size: 45px;
     }
 
-    article>div>figure>figcaption {
+    article>div>div>figure>figcaption {
         font-size: 24px;
     }
 
-    article>div>h4 {
+    article>div>div>h4 {
         font-size: 27px;
         line-height: 2.2rem;
         margin-left: 10.5%;
     }
 
-    article>div>p {
+    article>div>div>p {
         font-size: 24px;
         line-height: 2.2rem;
     }
@@ -436,6 +434,21 @@ footer>div>button {
 
 
 @media only screen and (min-width: 1024px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    button{
+        padding: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+        font-size: 18px;
+    }
+
+    #hamburger{
+        display: none;
+    }
+
     nav {
         display: flex;
         flex-direction: row;
@@ -444,15 +457,190 @@ footer>div>button {
     }
 
     nav>ul {
-        align-items: center;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        width: 30%;
+        width: 35%;
+        margin: 0;
+    }
+
+    nav>ul>li {
+        font-size: 15px;
     }
 
     nav>button {
         display: block;
-        align-items: flex-end;
+        align-items: center;
+        padding: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+        font-size: 15px;
+        margin: 0;
+        margin-top: -10px;
+    }
+
+    main {
+        flex-direction: row;
+        background-image: url("../images/bg-intro-desktop.svg");
+        background-size: 48% 75%;
+        background-position: right;
+        margin-right: -10%;
+        margin-top: -58px;
+        margin-bottom: -98px;
+        overflow-x: hidden;
+    }
+
+    main>figure {
+        margin-top: 50px;
+    }
+    
+    main>div {
+        align-self: center;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-left: 5%;
+        margin-top: -10px;
+    }
+
+    main>div>h1 {
+        text-align: start;
+        font-size: 30px;
+        max-width: 50%;
+    }
+
+    main>div>p {
+        max-width: 80%;
+        line-height: 1.5rem;
+        font-size: 18px;
+    }
+
+    section {
+        padding-left: 50px;
+        padding-top: 30px;
+    }
+
+    section>div:first-child {
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    section>div:first-child>h2 {
+        text-align: start;
+        font-size: 28px;
+    }   
+    
+    section>div:first-child>p {
+        max-width: 60%;
+        font-size: 15px;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .cont1{
+        justify-content: flex-start;
+        align-items: flex-start; 
+    }
+
+    .cont1>figure{
+        margin: 0;
+    }
+
+    .cont1>h4 {
+        font-size: 18px;
+        margin-top: 20px;
+        margin-bottom: -5px;
+    }
+
+    .cont1>p {
+        font-size: 15px;
+    }
+
+    article {
+        padding-top: 2%;
+        justify-content: flex-start;
+        align-items: flex-start; 
+        padding-left: 50px;
+        padding-top: 5%;
+        padding-bottom: 6%;
+    }
+
+    article>div {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start; 
+    } 
+
+    article>div>div {
+        align-self: flex-start;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    
+    article>h2 {
+        font-size: 28px;
+        margin-bottom: 50px;
+    }
+
+    article>div>div {
+        max-width: 23%;
+        padding-bottom: 0;
+    }
+
+    article>div>div>figure>figcaption {
+        font-size: 12px;
+    }
+
+    #currency>img {
+        height: 150px;
+    }
+
+    article>div>div>h4 {
+        font-size: 16px;
+        line-height: 1.3rem;
+        margin-top: 10px;
+    }
+
+    article>div>div>p {
+        font-size: 14px;
+        line-height: 1.3rem;
+    }
+
+    footer{
+        flex-direction: row;
+        justify-content: space-between;
+        padding-top: 20px;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-bottom: 20px;
+    }
+
+    footer>div {
+        align-self: flex-start;
+    }
+
+    footer>ul {
+        margin-top: 20px;
+    }
+
+    footer>ul>li {
+        font-size: 14px;
+    }
+
+    footer>div>button {
+        padding: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+        font-size: 15px;
+        margin-bottom: 5px;
+    }
+
+    footer>div>p {
+        font-size: 12px;
     }
 }
