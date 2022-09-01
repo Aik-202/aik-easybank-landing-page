@@ -26,6 +26,8 @@ button {
     border-radius: 15px;
     background: linear-gradient(to right, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
     border: 1px solid transparent;
+    border-left-color: hsl(136, 65%, 51%);
+    border-right-color: hsl(192, 70%, 51%);
 }
 
 nav {
@@ -94,7 +96,7 @@ main>div>h1 {
     text-align: center;
     font-size: 35px;
     max-width: 80%;
-    color:   hsl(233, 26%, 24%);
+    color: hsl(233, 26%, 24%);
     font-weight: 500;
     margin-bottom: 0;
 }
@@ -107,7 +109,7 @@ main>div>p {
 section {
     display: flex;
     flex-direction: column;
-    background-color:  hsl(220, 16%, 96%);
+    background-color: hsl(220, 16%, 96%);
 }
 
 section>div:first-child {
@@ -121,7 +123,7 @@ section>div:first-child>h2 {
     text-align: center;
     font-size: 30px;
     max-width: 80%;
-    color:   hsl(233, 26%, 24%);
+    color: hsl(233, 26%, 24%);
     font-weight: 500;
     margin-bottom: 0;
 }
@@ -138,7 +140,7 @@ section>div:first-child>p {
     align-items: center;
 }
 
-.cont1>h4{
+.cont1>h4 {
     font-size: 20px;
     margin-top: 0;
     margin-bottom: 0;
@@ -175,7 +177,7 @@ article>div {
 
 article>h2 {
     font-size: 30px;
-    color:   hsl(233, 26%, 24%);
+    color: hsl(233, 26%, 24%);
     font-weight: 500;
 }
 
@@ -199,31 +201,79 @@ article>div>figure>figcaption {
     font-size: 14px;
 }
 
-article>div>h4{
+article>div>h4 {
     margin-bottom: 0;
     margin-left: 10%;
     margin-right: 20px;
     line-height: 1.5rem;
     font-size: 17px;
     font-weight: 550;
-    color:   hsl(233, 26%, 24%);
+    color: hsl(233, 26%, 24%);
 }
 
 article>div>p {
     line-height: 1.5rem;
-    margin-left: 10%; 
+    margin-left: 10%;
     margin-right: 20px;
     margin-top: 5px;
     font-size: 15px;
 }
 
+footer{
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(233, 26%, 24%);
+}
+
+footer>div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer>div>div {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+}
+
+footer>div>div>figure {
+    margin: 10px;
+}
+
+footer>ul {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+
+footer>ul>li {
+    text-align: center;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    color: hsl(0, 0%, 98%);
+}
+
+footer>div>button {
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
 .attribution {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    margin-bottom: 10px;
     font-size: 11px;
     text-align: center;
+    color: hsl(0, 0%, 100%);
 }
 
 .attribution a {
     color: hsl(228, 45%, 44%);
+    padding-left: 2px;
 }
 
 @media only screen and (min-width: 1280px) {
