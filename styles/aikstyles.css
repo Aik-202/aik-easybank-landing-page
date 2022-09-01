@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@300&display=swap');
 
 * {
     transition: 1s;
@@ -18,6 +18,11 @@ p {
     color: hsl(233, 8%, 62%);
 }
 
+h1,h2,h4 {
+    color: hsl(233, 26%, 24%);
+    font-weight: 550;
+}
+
 button {
     padding: 10px;
     padding-left: 20px;
@@ -28,6 +33,11 @@ button {
     border: 1px solid transparent;
     border-left-color: hsl(136, 65%, 51%);
     border-right-color: hsl(192, 70%, 51%);
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.65;
 }
 
 nav {
@@ -48,6 +58,17 @@ nav>figure {
 
 nav>ul {
     display: none;
+    height: inherit;
+    border: 1px solid red;
+}
+
+nav>ul>li{
+    cursor: pointer;
+    border: 1px solid gray;
+}
+
+nav>ul>li:hover  {
+    border-bottom: 2px solid hsl(136, 65%, 51%);
 }
 
 nav>button {
@@ -97,7 +118,7 @@ main>div>h1 {
     font-size: 35px;
     max-width: 80%;
     color: hsl(233, 26%, 24%);
-    font-weight: 500;
+    font-weight: 580;
     margin-bottom: 0;
 }
 
@@ -124,7 +145,7 @@ section>div:first-child>h2 {
     font-size: 30px;
     max-width: 80%;
     color: hsl(233, 26%, 24%);
-    font-weight: 500;
+    font-weight: 580;
     margin-bottom: 0;
 }
 
@@ -162,6 +183,13 @@ article {
     padding-bottom: 18%;
 }
 
+article>div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} 
+
 article>div>div {
     align-self: center;
     display: flex;
@@ -178,7 +206,7 @@ article>div>div {
 article>h2 {
     font-size: 30px;
     color: hsl(233, 26%, 24%);
-    font-weight: 500;
+    font-weight: 580;
 }
 
 article>div>div>figure {
@@ -272,6 +300,7 @@ footer>div>button {
 
 .attribution a {
     color: hsl(228, 45%, 44%);
+    padding-left: 4px;
 }
 
 @media only screen and (min-width: 280px) {
@@ -393,6 +422,11 @@ footer>div>button {
 
     article>h2 {
         font-size: 45px;
+        margin-bottom: 50px;
+    }
+
+    article>div>div {
+        margin-bottom: 50px;
     }
 
     article>div>div>figure>figcaption {
@@ -433,7 +467,7 @@ footer>div>button {
 }
 
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 912px) {
     body {
         overflow-x: hidden;
     }
@@ -624,6 +658,10 @@ footer>div>button {
         align-self: flex-start;
     }
 
+    footer>div>figure{
+        margin-left: 0;
+    }
+
     footer>ul {
         margin-top: 20px;
     }
@@ -642,5 +680,81 @@ footer>div>button {
 
     footer>div>p {
         font-size: 12px;
+    }
+}
+@media only screen and (min-width: 1280px) {
+    button{
+        padding: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+        font-size: 14.5px;
+    }
+
+    nav {
+        padding-left: 10%;
+    }
+
+    nav>button{
+        padding: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+        font-size: 13px;
+    }
+
+    main {
+        margin-top: -98px;
+        margin-bottom: -130px;
+        padding-left: 9%;
+    }
+
+    main>figure {
+        margin-top: 85px;
+    }
+
+    main>div>h1 {
+        max-width: 40%;
+    }
+
+    main>div>p {
+        max-width: 60%;
+        line-height: 1.5rem;
+        font-size: 15px;
+    }
+
+    section {
+        padding-left: 14%;
+        padding-bottom: 5%;
+    }
+
+    section>div:first-child>p {
+        max-width: 50%;
+        line-height: 1.6rem;
+    }
+
+    .cont1>p {
+        line-height: 1.6rem; 
+    }
+
+    article {
+        padding-left: 14%;
+    }
+
+    article>div>div>p {
+        font-size: 13px;
+    }    
+
+    #currency>img {
+        height: 160px;
+    }
+
+    footer{
+        padding-left: 14%;
+    }
+
+    footer>div>button{
+        padding: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+        font-size: 13px;
     }
 }
