@@ -157,6 +157,7 @@ article {
     background-color: hsl(0, 0%, 98%);
     padding: 15px;
     padding-top: 15%;
+    padding-bottom: 18%;
 }
 
 article>div {
@@ -169,6 +170,13 @@ article>div {
     border: 1px solid hsl(0, 0%, 100%);
     margin-bottom: 20px;
     border-radius: 5px;
+    padding-bottom: 8%;
+}
+
+article>h2 {
+    font-size: 30px;
+    color:   hsl(233, 26%, 24%);
+    font-weight: 500;
 }
 
 article>div>figure {
@@ -187,18 +195,26 @@ article>div>figure>img {
 
 article>div>figure>figcaption {
     margin-left: 10%;
+    color: hsl(233, 8%, 62%);
+    font-size: 14px;
 }
 
 article>div>h4{
     margin-bottom: 0;
     margin-left: 10%;
     margin-right: 20px;
+    line-height: 1.5rem;
+    font-size: 17px;
+    font-weight: 550;
+    color:   hsl(233, 26%, 24%);
 }
 
 article>div>p {
     line-height: 1.5rem;
     margin-left: 10%; 
     margin-right: 20px;
+    margin-top: 5px;
+    font-size: 15px;
 }
 
 .attribution {
