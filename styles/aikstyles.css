@@ -50,6 +50,7 @@ nav {
     position: fixed;
     top: 0;
     width: 100%;
+    box-shadow: 0 4px 8px 0 hsla(0, 0%, 0%, 0.2), 0 6px 20px 0 hsla(0, 0%, 0%, 0.19);
 }
 
 nav>figure {
@@ -60,12 +61,10 @@ nav>ul {
     display: none;
     height: inherit;
     margin-bottom: 0;
-    border: 1px solid red;
 }
 
 nav>ul>li{
     cursor: pointer;
-    border: 1px solid gray;
 }
 
 nav>ul>li:hover  {
@@ -197,8 +196,10 @@ article>div>div {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 0;
     background-color: hsl(0, 0%, 100%);
     border: 1px solid hsl(0, 0%, 100%);
+    box-shadow: 0 4px 8px 0 hsla(0, 0%, 0%, 0.2), 0 6px 20px 0 hsla(0, 0%, 0%, 0.19);
     margin-bottom: 20px;
     border-radius: 5px;
     padding-bottom: 8%;
@@ -210,10 +211,12 @@ article>h2 {
     font-weight: 580;
 }
 
+
 article>div>div>figure {
     max-width: 100%;
     width: 100%;
     margin: 0;
+    padding: 0;
 }
 
 article>div>div>figure>img {
@@ -221,6 +224,8 @@ article>div>div>figure>img {
     width: inherit;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
+    margin: 0;
+    padding: 0;
     margin-bottom: 25px;
 }
 
@@ -524,10 +529,6 @@ footer>div>button {
         margin-bottom: -98px;
         overflow-x: hidden;
     }
-
-    main>figure {
-        margin-top: 50px;
-    }
     
     main>div {
         align-self: center;
@@ -611,18 +612,15 @@ footer>div>button {
         align-items: flex-start; 
     } 
 
-    article>div>div {
-        align-self: flex-start;
-        justify-content: flex-start;
-        align-items: flex-start;
-    }
-    
     article>h2 {
         font-size: 28px;
         margin-bottom: 50px;
     }
 
     article>div>div {
+        align-self: flex-start;
+        justify-content: flex-start;
+        align-items: flex-start;
         max-width: 23%;
         padding-bottom: 0;
     }
@@ -705,7 +703,7 @@ footer>div>button {
     main {
         margin-top: -98px;
         margin-bottom: -130px;
-        padding-left: 9%;
+        padding-left: 5%;
     }
 
     main>figure {
@@ -718,30 +716,40 @@ footer>div>button {
 
     main>div>p {
         max-width: 60%;
-        line-height: 1.5rem;
+        line-height: 1.3rem;
         font-size: 15px;
     }
 
     section {
-        padding-left: 14%;
+        padding-left: 10%;
+        padding-right: 5%;
         padding-bottom: 5%;
     }
 
     section>div:first-child>p {
         max-width: 50%;
-        line-height: 1.6rem;
+        line-height: 1.3rem;
     }
 
     .cont1>p {
-        line-height: 1.6rem; 
+        line-height: 1.3rem; 
+        font-size: 14px;
     }
 
     article {
-        padding-left: 14%;
+        padding-left: 10%;
+        padding-right: 5%;
+    }
+
+    article>div>div>figure>figcaption {
+        font-size: 11px;
+        margin-bottom: 5px;
     }
 
     article>div>div>p {
-        font-size: 13px;
+        line-height: 1.2rem; 
+        font-size: 12px;
+        margin-bottom: 8%;
     }    
 
     #currency>img {
