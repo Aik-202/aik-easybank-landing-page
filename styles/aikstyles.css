@@ -18,9 +18,17 @@ p {
     color: hsl(233, 8%, 62%);
 }
 
+
 h1,h2,h4 {
     color: hsl(233, 26%, 24%);
     font-weight: 550;
+    cursor: pointer;
+}
+
+h1:hover, h2:hover, h4:hover {
+    background: linear-gradient(to right, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 button {
@@ -317,7 +325,7 @@ footer>div>button {
     main>div>p {
         font-size: 15px;
         max-width: 85%;
-        line-height: 2.2rem;
+        line-height: 1.5rem;
     }
 
     section>div:first-child>h2 {
@@ -327,7 +335,7 @@ footer>div>button {
     section>div:first-child>p {
         font-size: 15px;
         max-width: 85%;
-        line-height: 2.2rem;
+        line-height: 1.5rem;
     }
 
     .cont1>h4 {
@@ -337,7 +345,7 @@ footer>div>button {
     .cont1>p {
         font-size: 15px;
         max-width: 85%;
-        line-height: 2.2rem;
+        line-height: 1.5rem;
     }
 
     article>h2 {
@@ -374,6 +382,18 @@ footer>div>button {
 @media only screen and (min-width: 540px) {
     main {
         background-size: 100% 80%;
+    }
+
+    main>div>p {
+        line-height: 1.3rem;
+    }
+
+    section>div:first-child>p {
+        line-height: 1.3rem;
+    }
+
+    .cont1>p {
+        line-height: 1.3rem;
     }
 
     article>div>div {
@@ -546,13 +566,14 @@ footer>div>button {
 
     main>div>p {
         max-width: 80%;
-        line-height: 1.5rem;
-        font-size: 18px;
+        line-height: 1.3rem;
+        font-size: 15px;
     }
 
     section {
         padding-left: 50px;
         padding-top: 30px;
+        padding-bottom: 5%;
     }
 
     section>div:first-child {
@@ -568,6 +589,7 @@ footer>div>button {
     section>div:first-child>p {
         max-width: 60%;
         font-size: 15px;
+        line-height: 1.3rem;
     }
 
     .container {
@@ -593,7 +615,8 @@ footer>div>button {
     }
 
     .cont1>p {
-        font-size: 15px;
+        font-size: 12px;
+        line-height: 1.2rem;
     }
 
     article {
@@ -626,22 +649,22 @@ footer>div>button {
     }
 
     article>div>div>figure>figcaption {
-        font-size: 12px;
+        font-size: 11px;
     }
 
     #currency>img {
-        height: 150px;
+        height: 142px;
     }
 
     article>div>div>h4 {
-        font-size: 16px;
+        font-size: 15px;
         line-height: 1.3rem;
         margin-top: 10px;
     }
 
     article>div>div>p {
-        font-size: 14px;
-        line-height: 1.3rem;
+        font-size: 12px;
+        line-height: 1.2rem;
     }
 
     footer{
