@@ -15,14 +15,21 @@ for( let i = 0; i < navList.length; i++){
 }
 
 const menu = document.getElementById("hamburger_icon");
+const hamburgerList = document.getElementById("hamburger_list");
+const mockups = document.getElementById("mockups");
 
-if(menu.getAttribute("src").contains("./images/icon-hamburger.svg")) {
-    menu.addEventListener("click",  () => {
-        menu.setAttribute("src", "./images/icon-hamburger.svg");
-        menu.classList.remove("changed")
-    });
-} else {
-    menu.addEventListener("click", srcChanged = () => {
+menu.addEventListener("click", () => {
+    if(menu.getAttribute("src") === "./images/icon-hamburger.svg") {
         menu.setAttribute("src", "./images/icon-close.svg");
-    });
-}
+        mockups.style.display = "none";
+        mockups.parentElement.previousElementSibling.style.marginTop = "80%";
+        hamburgerList.style.display = "flex";
+    } else {
+        menu.setAttribute("src", "./images/icon-hamburger.svg");
+        hamburgerList.style.display = "none";
+        mockups.style.display = "block";
+        mockups.parentElement.previousElementSibling.style.marginTop = "0%";
+    }  
+});
+   
+

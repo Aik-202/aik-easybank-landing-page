@@ -131,17 +131,29 @@ main>figure>img {
     width: 100%;
 }
 
-main>ul {
+#hamburger_list {
     position: absolute;
     display: none;
     flex-direction: column;
     justify-content: space-between;
+    max-width: 85%;
     width: 100%;
+    top: 100%;
+    left: 5%;
+    padding-left: 0;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    background-color: hsl(0, 0%, 100%);
+    border: 1px solid hsl(0, 0%, 100%);
+    border-radius: 5px;
 }
 
-main>ul>li {
+#hamburger_list>li {
     align-self: center;
     color: hsl(233, 26%, 24%);
+    margin : 0 auto;
+    padding: 10px;
+    font-size: 12px;
 }
 
 main>div {
