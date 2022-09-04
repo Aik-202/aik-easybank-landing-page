@@ -73,11 +73,10 @@ nav>ul {
     margin-bottom: 0;
 }
 
-nav>ul>li{
+nav>ul>li>a{
     cursor: pointer;
-    color: hsl(233, 8%, 62%);
-    font-size: 10px;
     position: relative;
+    color: hsl(233, 8%, 62%);
 }
 
 .border {
@@ -85,22 +84,22 @@ nav>ul>li{
     background: linear-gradient(to right, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
     width: 50px;
     margin-left: -5px;
-    margin-top: 28px;
+    margin-top: 26px;
     height: 1mm;
     position: absolute;
 }
 
 .bder2 {
-    margin-left: -4px;
+    margin-left: -5px;
 }
 
 .bder3 {
-    margin-left: -2px;
+    margin-left: -4px;
     width: 60px;
 }
 
 .bder5 {
-    margin-left: -2px;
+    margin-left: -4px;
     width: 60px;
 }
 
@@ -587,7 +586,7 @@ footer>ul>li:hover {
         margin: 0;
     }
 
-    nav>ul>li {
+    nav>ul>li>a {
         font-size: 15px;
         margin-left: 10px;
         margin-right: 20px;
@@ -607,12 +606,13 @@ footer>ul>li:hover {
     main {
         flex-direction: row;
         background-image: url("../images/bg-intro-desktop.svg");
-        background-size: 48% 75%;
+        background-size: 52% 75%;
         background-position: right;
         margin-right: -10%;
         margin-top: -58px;
         margin-bottom: -98px;
         overflow-x: hidden;
+        padding-bottom: 0;
     }
     
     main>div {
@@ -789,13 +789,13 @@ footer>ul>li:hover {
     }
 
     main {
-        margin-top: -105px;
-        margin-bottom: -130px;
+        margin-top: -128px;
+        margin-bottom: -145px;
         padding-left: 5%;
     }
 
-    main>figure {
-        margin-top: 89px;
+    main>figure>img {
+        margin-top: 86px;
     }
 
     main>div>h1 {
