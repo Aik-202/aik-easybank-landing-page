@@ -25,10 +25,8 @@ h1,h2,h4 {
     cursor: pointer;
 }
 
-h1:hover, h2:hover, h4:hover {
-    background: linear-gradient(to right, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+h1:hover, h4:hover {
+    color: hsl(136, 65%, 51%);
 }
 
 button {
@@ -73,10 +71,41 @@ nav>ul {
 
 nav>ul>li{
     cursor: pointer;
+    color: hsl(233, 8%, 62%);
+    font-size: 10px;
+    position: relative;
+}
+
+.border {
+    display: none;
+    background: linear-gradient(to right, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
+    width: 50px;
+    margin-left: -5px;
+    margin-top: 28px;
+    height: 1mm;
+    position: absolute;
+}
+
+.bder2 {
+    margin-left: -4px;
+}
+
+.bder3 {
+    margin-left: -2px;
+    width: 60px;
+}
+
+.bder5 {
+    margin-left: -2px;
+    width: 60px;
+}
+
+.border_active{
+    display: block;
 }
 
 nav>ul>li:hover  {
-    border-bottom: 2px solid hsl(136, 65%, 51%);
+    color: hsl(233, 26%, 24%);
 }
 
 nav>button {
@@ -86,6 +115,7 @@ nav>button {
 #hamburger {
     align-items: center;
     margin-right: 10px;
+    cursor: pointer;
 }
 
 main {
@@ -111,6 +141,7 @@ main>ul {
 
 main>ul>li {
     align-self: center;
+    color: hsl(233, 26%, 24%);
 }
 
 main>div {
@@ -155,6 +186,10 @@ section>div:first-child>h2 {
     color: hsl(233, 26%, 24%);
     font-weight: 580;
     margin-bottom: 0;
+}
+
+section>div:first-child>h2:hover {
+    color: hsl(136, 65%, 51%);
 }
 
 section>div:first-child>p {
@@ -280,8 +315,13 @@ footer>div>div {
     margin-bottom: 20px;
 }
 
-footer>div>div>figure {
+footer>div>div>svg {
     margin: 10px;
+    cursor: pointer;
+}
+
+footer>div>div>svg>path:hover {
+    fill: #33D35E;
 }
 
 footer>ul {
@@ -296,11 +336,16 @@ footer>ul>li {
     margin-top: 8px;
     margin-bottom: 8px;
     color: hsl(0, 0%, 98%);
+    cursor: pointer;
 }
 
 footer>div>button {
     margin-top: 25px;
     margin-bottom: 20px;
+}
+
+footer>ul>li:hover {
+    color: hsl(136, 65%, 51%);
 }
 
 .attribution {
@@ -513,7 +558,8 @@ footer>div>button {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        padding-left: 5%;
+        padding-left: 8%;
+        overflow-x: hidden;
     }
 
     nav>ul {
@@ -526,6 +572,8 @@ footer>div>button {
 
     nav>ul>li {
         font-size: 15px;
+        margin-left: 10px;
+        margin-right: 20px;
     }
 
     nav>button {
@@ -724,13 +772,13 @@ footer>div>button {
     }
 
     main {
-        margin-top: -98px;
+        margin-top: -105px;
         margin-bottom: -130px;
         padding-left: 5%;
     }
 
     main>figure {
-        margin-top: 85px;
+        margin-top: 89px;
     }
 
     main>div>h1 {
@@ -746,12 +794,16 @@ footer>div>button {
     section {
         padding-left: 10%;
         padding-right: 5%;
-        padding-bottom: 5%;
+        padding-bottom: 6%;
+    }
+
+    section>div:first-child {
+        margin-bottom: 35px;
     }
 
     section>div:first-child>p {
         max-width: 50%;
-        line-height: 1.3rem;
+        line-height: 1.4rem;
     }
 
     .cont1>p {
