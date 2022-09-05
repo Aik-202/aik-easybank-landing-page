@@ -6,13 +6,31 @@ const menu = document.getElementById("hamburger_icon");
 const hamburgerList = document.getElementById("hamburger_list");
 const mockups = document.getElementById("mockups");
 const actualList = hamburgerList.children;
+const bubble = document.getElementById("bubble").children;
+
+for(let i = 0; i < bubble.length; i++){
+    setInterval(() => {
+        bubble[0].style.backgroundColor = "hsl(228, 45%, 44%)"
+    window.setTimeout( () => {
+        bubble[1].style.backgroundColor = "hsl(228, 45%, 44%)"
+        bubble[0].style.backgroundColor = "hsl(233, 8%, 62%)"
+    }, 1000)
+    window.setTimeout( () => {
+        bubble[2].style.backgroundColor = "hsl(228, 45%, 44%)"
+        bubble[1].style.backgroundColor = "hsl(233, 8%, 62%)"
+    }, 2000)
+    window.setTimeout( () => {
+        bubble[2].style.backgroundColor = "hsl(233, 8%, 62%)"
+    }, 3000)
+    }, 3200)
+}
 
 for (let i = 0; i < navList.length; i++) {
-    navList[i].addEventListener("mouseover", () => {
+    navList[i].firstElementChild.addEventListener("mouseover", () => {
         borders[i].classList.add("border_active")
     });
 
-    navList[i].addEventListener("mouseout", () => {
+    navList[i].firstElementChild.addEventListener("mouseout", () => {
         borders[i].classList.remove("border_active")
     });
 
