@@ -6,8 +6,9 @@ const menu = document.getElementById("hamburger_icon");
 const hamburgerList = document.getElementById("hamburger_list");
 const mockups = document.getElementById("mockups");
 const actualList = hamburgerList.children;
-const bubbleContainer =  document.getElementById("bubble");
-const bubble = bubbleContainer.children;
+const bubbleContainer =  document.getElementById("preloader");
+const bubble = document.getElementById("bubble").children;
+
 
 function preloader () {
     bubbleContainer.style.display = "flex";
