@@ -9,25 +9,27 @@ const actualList = hamburgerList.children;
 const bubbleContainer =  document.getElementById("preloader");
 const bubble = document.getElementById("bubble").children;
 
+document.body.style.overflowY = "hidden";
+for(let i = 0; i < bubble.length; i++){
+    setInterval(() => {
+        bubble[0].style.backgroundColor = "hsl(228, 45%, 44%)"
+    window.setTimeout( () => {
+        bubble[1].style.backgroundColor = "hsl(228, 45%, 44%)"
+        bubble[0].style.backgroundColor = "hsl(233, 8%, 62%)"
+    }, 500)
+    window.setTimeout( () => {
+        bubble[2].style.backgroundColor = "hsl(228, 45%, 44%)"
+        bubble[1].style.backgroundColor = "hsl(233, 8%, 62%)"
+    }, 1000)
+    window.setTimeout( () => {
+        bubble[2].style.backgroundColor = "hsl(233, 8%, 62%)"
+    }, 1500)
+    }, 2000)
+}
 
 function preloader () {
-    bubbleContainer.style.display = "flex";
-    for(let i = 0; i < bubble.length; i++){
-        setInterval(() => {
-            bubble[0].style.backgroundColor = "hsl(228, 45%, 44%)"
-        window.setTimeout( () => {
-            bubble[1].style.backgroundColor = "hsl(228, 45%, 44%)"
-            bubble[0].style.backgroundColor = "hsl(233, 8%, 62%)"
-        }, 1000)
-        window.setTimeout( () => {
-            bubble[2].style.backgroundColor = "hsl(228, 45%, 44%)"
-            bubble[1].style.backgroundColor = "hsl(233, 8%, 62%)"
-        }, 2000)
-        window.setTimeout( () => {
-            bubble[2].style.backgroundColor = "hsl(233, 8%, 62%)"
-        }, 3000)
-        }, 3200)
-    }
+    bubbleContainer.style.display = "none";
+    document.body.style.overflowY = "scroll";
 }
 
 for (let i = 0; i < navList.length; i++) {
