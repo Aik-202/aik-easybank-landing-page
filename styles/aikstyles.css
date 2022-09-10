@@ -30,6 +30,7 @@ body {
     justify-content: center;
     align-items: center;
     margin-left: 20px;
+    margin-top: 10px;
 }
 
 #bubble>span {
@@ -58,7 +59,7 @@ h2>a,
 h4>a {
     color: hsl(233, 26%, 24%);
     font-weight: 550;
-    cursor: pointer;
+    cursor: pointer
 }
 
 h1>a:hover,
@@ -121,6 +122,7 @@ nav>ul>li>a {
     margin-top: 24px;
     height: 1mm;
     position: absolute;
+    transition: display 2s;
 }
 
 .bder2 {
@@ -217,6 +219,7 @@ main {
     flex-direction: column-reverse;
     background-image: url("../images/bg-intro-mobile.svg");
     background-repeat: no-repeat;
+    background-size: contain;
     padding-bottom: 20%;
 }
 
@@ -241,7 +244,7 @@ main>div>h1 {
     color: hsl(233, 26%, 24%);
     font-weight: 580;
     margin-bottom: 0;
-    margin-top: 10px;
+    margin-top: 5px;
 }
 
 main>div>p {
@@ -320,6 +323,7 @@ article>div {
 }
 
 article>div>div {
+    flex: 1;
     align-self: center;
     display: flex;
     flex-direction: column;
@@ -329,9 +333,10 @@ article>div>div {
     background-color: hsl(0, 0%, 100%);
     border: 1px solid hsl(0, 0%, 100%);
     box-shadow: 0 4px 8px 0 hsla(0, 0%, 0%, 0.2), 0 6px 20px 0 hsla(0, 0%, 0%, 0.19);
-    margin-bottom: 20px;
+    margin-top: 30px;
     border-radius: 5px;
     padding-bottom: 8%;
+    max-width: 80%;
 }
 
 article>h2 {
@@ -357,6 +362,7 @@ article>div>div>figure>img {
     padding: 0;
     margin-bottom: 25px;
 }
+
 
 article>div>div>figure>figcaption {
     margin-left: 10%;
@@ -705,6 +711,7 @@ footer>ul>li>a:hover {
         justify-content: space-between;
         padding-left: 8%;
         overflow-x: hidden;
+        box-shadow: 0 2px 4px 0 hsla(0, 0%, 0%, 0.2), 0 4px 10px 0 hsla(0, 0%, 0%, 0.19);
     }
 
     nav>ul {
@@ -752,12 +759,13 @@ footer>ul>li>a:hover {
         flex-direction: row;
         background-image: url("../images/bg-intro-desktop.svg");
         background-size: 52% 75%;
-        background-position: right;
+        background-position: center right;
         margin-right: -10%;
         margin-top: -58px;
         margin-bottom: -98px;
         overflow-x: hidden;
         padding-bottom: 0;
+        padding-right: 0;
     }
 
     main>div {
@@ -862,10 +870,6 @@ footer>ul>li>a:hover {
         font-size: 11px;
     }
 
-    #currency>img {
-        height: 142px;
-    }
-
     article>div>div>h4 {
         font-size: 15px;
         line-height: 1.3rem;
@@ -875,6 +879,10 @@ footer>ul>li>a:hover {
     article>div>div>p {
         font-size: 12px;
         line-height: 1.2rem;
+    }
+
+    #currency>img {
+        max-height: 145px;
     }
 
     footer {
@@ -991,6 +999,10 @@ footer>ul>li>a:hover {
         padding-right: 5%;
     }
 
+    #currency>img {
+        max-height: 165px;
+    }
+
     article>div>div>figure>figcaption {
         font-size: 11px;
         margin-bottom: 5px;
@@ -1002,12 +1014,9 @@ footer>ul>li>a:hover {
         margin-bottom: 8%;
     }
 
-    #currency>img {
-        height: 160px;
-    }
-
     footer {
-        padding-left: 14%;
+        padding-left: 9%;
+        padding-right: 6%;
     }
 
     footer>div>button {
