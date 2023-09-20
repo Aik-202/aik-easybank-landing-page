@@ -336,7 +336,7 @@ article>div>div {
     margin-top: 30px;
     border-radius: 5px;
     padding-bottom: 8%;
-    max-width: 85%;
+    max-width: 88%;
 }
 
 article>h2 {
@@ -709,7 +709,7 @@ footer>ul>li>a:hover {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        padding-left: 8%;
+        padding-left: 2%;
         overflow-x: hidden;
         box-shadow: 0 2px 4px 0 hsla(0, 0%, 0%, 0.2), 0 4px 10px 0 hsla(0, 0%, 0%, 0.19);
     }
@@ -720,6 +720,7 @@ footer>ul>li>a:hover {
         justify-content: space-between;
         width: 35%;
         margin: 0;
+        margin-left: -20%;
     }
 
     nav>ul>li>a {
@@ -737,6 +738,7 @@ footer>ul>li>a:hover {
         font-size: 15px;
         margin: 0;
         margin-top: -10px;
+        margin-right: 10%;
     }
 
     .border {
@@ -862,7 +864,7 @@ footer>ul>li>a:hover {
         align-self: flex-start;
         justify-content: flex-start;
         align-items: flex-start;
-        max-width: 23%;
+        max-width: 22%;
         padding-bottom: 0;
     }
 
@@ -1025,4 +1027,15 @@ footer>ul>li>a:hover {
         padding-right: 20px;
         font-size: 13px;
     }
+}
+@media only screen and (min-width: 1282px) {
+    nav>ul {
+        margin: 0;
+    }
+
+    nav>button {
+        margin: 0;
+        margin-top: -10px;
+    }
+
 }
