@@ -1,77 +1,44 @@
-// const navList = $(".nav_list").chlidren();
+$("body").css("overflow-y", "hidden");
 
-const navList = document.querySelectorAll(".nav_list");
-const borders = document.querySelectorAll(".border");
-const menu = document.getElementById("hamburger_icon");
-const hamburgerList = document.getElementById("hamburger_list");
-const mockups = document.getElementById("mockups");
-const actualList = hamburgerList.children;
-const bubbleContainer =  document.getElementById("preloader");
-const bubble = document.getElementById("bubble").children;
-
-document.body.style.overflowY = "hidden";
-for(let i = 0; i < bubble.length; i++){
-    setInterval(() => {
-        bubble[0].style.background = "linear-gradient(to right, hsl(136, 65%, 51%), hsl(192, 70%, 51%))"
-        bubble[0].style.transform = "translateY(-5px)"
+setInterval(() => {
+    $("#bubble").children().first().css({"background": "linear-gradient(to right, hsl(136, 65%, 51%), hsl(192, 70%, 51%))", "transform": "translateY(-5px)"});
     window.setTimeout( () => {
-        bubble[0].style.background = "hsl(233, 8%, 62%)"
-        bubble[0].style.transform = "translateY(0)"
-        bubble[1].style.background = "linear-gradient(to right, hsl(136, 65%, 51%), hsl(192, 70%, 51%))"
-        bubble[1].style.transform = "translateY(-5px)"
+        $("#bubble").children().first().css({"background": "hsl(233, 8%, 62%)", "transform": "translateY(0)"});
+        $("#bubble").children().first().next().css({"background": "linear-gradient(to right, hsl(136, 65%, 51%), hsl(192, 70%, 51%))", "transform": "translateY(-5px)"});
     }, 500)
     window.setTimeout( () => {
-        bubble[1].style.transform = "translateY(0)"
-        bubble[1].style.background = "hsl(233, 8%, 62%)"
-        bubble[2].style.background = "linear-gradient(to right, hsl(136, 65%, 51%), hsl(192, 70%, 51%))"
-        bubble[2].style.transform = "translateY(-5px)"
+        $("#bubble").children().first().next().css({"background": "hsl(233, 8%, 62%)", "transform": "translateY(0)"});
+        $("#bubble").children().last().css({"background": "linear-gradient(to right, hsl(136, 65%, 51%), hsl(192, 70%, 51%))", "transform": "translateY(-5px)"});
     }, 1000)
     window.setTimeout( () => {
-        bubble[2].style.transform = "translateY(0)"
-        bubble[2].style.background = "hsl(233, 8%, 62%)"
+        $("#bubble").children().last().css({"background": "hsl(233, 8%, 62%)", "transform": "translateY(0)"});
     }, 1500)
-    }, 2000)
-}
+}, 2000)
+
 
 function preloader () {
-    bubbleContainer.style.display = "none";
-    document.body.style.overflowY = "scroll";
+    $("#preloader").css("display","none");
+    $("body").css("overflow-y", "scroll");
 }
 
-for (let i = 0; i < navList.length; i++) {
-    navList[i].firstElementChild.addEventListener("mouseover", () => {
-        borders[i].classList.add("border_active")
-    });
+$(".nav_list > a").mouseover( (e) => {$(e.target).next().addClass("border_active")}); 
+    
+$(".nav_list > a").mouseout((e) => {$(e.target).next().removeClass("border_active")});
 
-    navList[i].firstElementChild.addEventListener("mouseout", () => {
-        borders[i].classList.remove("border_active")
-    });
-
-}
-
-menu.addEventListener("click", () => {
-    if (menu.getAttribute("src") === "./images/icon-hamburger.svg") {
-        menu.setAttribute("src", "./images/icon-close.svg");
-        mockups.style.display = "none";
-        mockups.parentElement.previousElementSibling.style.paddingTop = "82%";
-        mockups.parentElement.previousElementSibling.style.background = "linear-gradient( hsla(233, 26%, 24%, 0.75),hsl(0, 0%, 100%))";
-        hamburgerList.style.display = "flex";
+$("#hamburger_icon").click( () => {
+    if ($("#hamburger_icon").attr("src") === "./images/icon-hamburger.svg") {
+        $("#hamburger_icon").attr("src", "./images/icon-close.svg");
+        $("#mockups").css("display", "none"); 
+        $("#mockups").parent().prev().css({"padding-top": "82%", "background": "linear-gradient( hsla(233, 26%, 24%, 0.75),hsl(0, 0%, 100%))"});
+        $("#hamburger_list").css("display", "flex"); 
     } else {
-        menu.setAttribute("src", "./images/icon-hamburger.svg");
-        hamburgerList.style.display = "none";
-        mockups.style.display = "block";
-        mockups.parentElement.previousElementSibling.style.paddingTop = "0%";
-        mockups.parentElement.previousElementSibling.style.background = "transparent";
+        $("#hamburger_icon").attr("src", "./images/icon-hamburger.svg");
+        $("#mockups").css("display", "block"); 
+        $("#mockups").parent().prev().css({"padding-top": "0%", "background": "transparent"});
+        $("#hamburger_list").css("display", "none");
     }
+    
 });
 
-for (let i = 0; i < actualList.length; i++) {
-    actualList[i].firstElementChild.addEventListener("mouseover", () => {
-        actualList[i].firstElementChild.nextElementSibling.classList.add("ham_border_active")
-    });
-
-    actualList[i].addEventListener("mouseout", () => {
-        actualList[i].firstElementChild.nextElementSibling.classList.remove("ham_border_active")
-    });
-
-}
+$(".ham_border").prev().mouseover((e) => {$(e.target).next().addClass("ham_border_active")});
+$(".ham_border").prev().mouseout((e) => {$(e.target).next().removeClass("ham_border_active")})
