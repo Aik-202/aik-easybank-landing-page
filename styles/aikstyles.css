@@ -10,6 +10,15 @@ body {
     font-family: 'Public Sans';
 }
 
+article>div>div>figure>img {
+    height: 167px;
+}
+
+article>div:first-child>figure>img {
+    height: auto;
+}
+
+
 #preloader {
     width: 100%;
     height: 100%;
