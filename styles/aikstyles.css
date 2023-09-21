@@ -64,16 +64,14 @@ p {
 
 
 h1>a,
-h2>a,
-h4>a {
+h2>a {
     color: hsl(233, 26%, 24%);
     font-weight: 550;
     cursor: pointer
 }
 
 h1>a:hover,
-h2>a:hover,
-h4>a:hover {
+h2>a:hover {
     color: hsl(136, 65%, 51%);
 }
 
@@ -301,7 +299,7 @@ section>div:first-child>p {
     align-items: center;
 }
 
-.cont1>h4 {
+.cont1>h2 {
     font-size: 20px;
     margin-top: 0;
     margin-bottom: 0;
@@ -379,7 +377,7 @@ article>div>div>figure>figcaption {
     font-size: 14px;
 }
 
-article>div>div>h4 {
+article>div>div>h2 {
     margin-bottom: 0;
     margin-left: 10%;
     margin-right: 20px;
@@ -493,7 +491,7 @@ footer>ul>li>a:hover {
         line-height: 1.5rem;
     }
 
-    .cont1>h4 {
+    .cont1>h2 {
         font-size: 22px;
     }
 
@@ -511,7 +509,7 @@ footer>ul>li>a:hover {
         font-size: 14px;
     }
 
-    article>div>div>h4 {
+    article>div>div>h2 {
         font-size: 17px;
         margin-left: 10.5%;
     }
@@ -557,7 +555,7 @@ footer>ul>li>a:hover {
         margin-bottom: 30px;
     }
 
-    article>div>div>h4 {
+    article>div>div>h2 {
         margin-left: 35px;
     }
 }
@@ -628,7 +626,7 @@ footer>ul>li>a:hover {
         line-height: 2.2rem;
     }
 
-    .cont1>h4 {
+    .cont1>h2 {
         font-size: 35px;
     }
 
@@ -651,7 +649,7 @@ footer>ul>li>a:hover {
         font-size: 24px;
     }
 
-    article>div>div>h4 {
+    article>div>div>h2 {
         font-size: 27px;
         line-height: 2.2rem;
         margin-left: 10.5%;
@@ -837,7 +835,7 @@ footer>ul>li>a:hover {
         margin: 0;
     }
 
-    .cont1>h4 {
+    .cont1>h2 {
         font-size: 18px;
         margin-top: 20px;
         margin-bottom: -5px;
@@ -881,7 +879,7 @@ footer>ul>li>a:hover {
         font-size: 11px;
     }
 
-    article>div>div>h4 {
+    article>div>div>h2 {
         font-size: 15px;
         line-height: 1.3rem;
         margin-top: 10px;
